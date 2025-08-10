@@ -6,7 +6,7 @@ const config: Config = {
   title: 'Booty TS',
   tagline: 'Learn more on how to use Booty TS.',
   url: 'https://booty-ts-docs.elizasmith1ph.workers.dev',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
   onBrokenMarkdownLinks: 'throw',
