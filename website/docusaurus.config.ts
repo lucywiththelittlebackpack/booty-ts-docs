@@ -4,16 +4,16 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Booty TS',
-  tagline: 'Learn more on how to use ConfigCat Feature Flags.',
-  url: 'https://configcat.com',
-  baseUrl: '/docs/',
+  tagline: 'Learn more on how to use Booty TS.',
+  url: 'https://booty-ts-docs.elizasmith1ph.workers.dev',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
   onBrokenMarkdownLinks: 'throw',
   trailingSlash: true,
   favicon: 'img/favicon.png',
-  organizationName: 'configcat', // Usually your GitHub org/user name.
-  projectName: 'configcat', // Usually your repo name.
+  organizationName: 'lucywiththelittlebackpack', // Usually your GitHub org/user name.
+  projectName: 'booty-ts-docs', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
