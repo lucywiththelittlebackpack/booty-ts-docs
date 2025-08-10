@@ -3,7 +3,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ConfigCat Docs',
+  title: 'Booty TS',
   tagline: 'Learn more on how to use ConfigCat Feature Flags.',
   url: 'https://configcat.com',
   baseUrl: '/docs/',
@@ -142,6 +142,11 @@ const config: Config = {
   ],
   themeConfig: {
     image: '/img/docs-cover.png',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'ConfigCat',
       logo: {

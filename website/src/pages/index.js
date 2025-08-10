@@ -146,6 +146,34 @@ function Feature({ imageUrl, title, description, links }) {
   );
 }
 
+function StackLogos() {
+  return (
+    <div>
+     
+      <div className="text--center">
+        <h2>Fun x Fast</h2>
+        <a href="https://vite.dev" target="_blank">
+          <img src={useBaseUrl('img/vite.svg')} className={clsx('no-auto-height', styles.logo)}  alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={useBaseUrl('img/react.svg')} className={clsx('no-auto-height', styles.logo, styles.react )} alt="React logo" />
+        </a>
+        <a href="https://hono.dev/" target="_blank">
+          <img src={useBaseUrl('img/hono.svg')} className={clsx('no-auto-height', styles.logo, styles.cloudflare )}  alt="Hono logo" />
+        </a>
+        <a href="https://workers.cloudflare.com/" target="_blank">
+          <img
+           src={useBaseUrl('img/Cloudflare_Logo.svg')} className={clsx('no-auto-height', styles.logo, styles.cloudflare )}
+            alt="Cloudflare logo"
+          />
+        </a>
+        <h1>Vite + React + Hono + Cloudflare</h1>
+      </div>
+      
+    </div>
+  );
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -177,6 +205,11 @@ function Home() {
         </div>
       </header>
       <main>
+          <section className={styles.features}>
+            <div className="container">
+                <StackLogos />
+            </div>
+          </section>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
