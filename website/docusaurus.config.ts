@@ -151,7 +151,7 @@ const config: Config = {
       title: 'ConfigCat',
       logo: {
         alt: 'ConfigCat',
-        src: 'img/cat.svg',
+        src: 'img/cloud_ts_dev_ops.png',
       },
       items: [
         {

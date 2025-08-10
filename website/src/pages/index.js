@@ -146,12 +146,19 @@ function Feature({ imageUrl, title, description, links }) {
   );
 }
 
-function StackLogos() {
+function StackLogos({styles}) {
   return (
     <div>
      
       <div className="text--center">
         <h2>Fun x Fast</h2>
+        <div className="text--center">
+         <img
+            className={clsx('no-auto-height', styles.heroImage)}
+            src={useBaseUrl('img/cloud_ts_dev_ops.png')}
+            alt="ConfigCat Docs"
+          />
+          </div>
         <a href="https://vite.dev" target="_blank">
           <img src={useBaseUrl('img/vite.svg')} className={clsx('no-auto-height', styles.logo)}  alt="Vite logo" />
         </a>
@@ -188,7 +195,7 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <img
             className={clsx('no-auto-height', styles.heroImage)}
-            src={useBaseUrl('img/docs.svg')}
+            src={useBaseUrl('img/devops.png')}
             alt="ConfigCat Docs"
           />
           <div className={styles.buttons}>
@@ -207,7 +214,7 @@ function Home() {
       <main>
           <section className={styles.features}>
             <div className="container">
-                <StackLogos />
+                <StackLogos styles={styles} />
             </div>
           </section>
         {features && features.length > 0 && (
